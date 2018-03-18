@@ -95,7 +95,6 @@ p {
         display: grid;
         grid-template-rows: 3fr minmax(100px, 350px) max-content auto 1fr;
         justify-items: center;
-        /* background-color: inherit; */
         background: linear-gradient(white, black);
     }
 
