@@ -41,7 +41,7 @@ p {
     float: left;
     font-size: 80%;
     border-right: 1px solid #000;
-    padding: 0 1.25em;
+    padding: 0 1.25rem;
 }
 
 .horizontal-menu__item:last-child {
@@ -88,6 +88,20 @@ p {
     color: inherit;
 }
 
+/* about page */
+
+.aboutpage {
+    padding: 10px;
+}
+
+.aboutpage__nav-container {
+    text-align: center;
+}
+
+.aboutpage__nav-item {
+    font-size: 80%;
+}
+
 @supports(display: grid) {
     /* landingpage */
 
@@ -116,5 +130,11 @@ p {
     .landingpage__image {
         max-height: 300px;
     }
+}
+
+@media(max-width: 480px) {
+    /* .aboutpage__nav-item, .aboutpage__nav-item .fa-2x {
+        font-size: 80%;
+    } */
 
 }
