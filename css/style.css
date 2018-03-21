@@ -20,6 +20,9 @@ p {
     width: 50vw;
 }
 
+em {
+    font-weight: bold;
+}
 /*
     Globals
 */
