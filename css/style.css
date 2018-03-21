@@ -99,8 +99,16 @@ p {
 }
 
 .aboutpage__nav-item {
-    font-size: 1.25em;
-    padding: 0 .8rem;
+    font-size: 2em;
+    /* padding: 0 .8rem; */
+}
+
+.aboutpage__nav-container + .aboutpage__nav-container {
+    margin-top: 20px;
+}
+
+.aboutpage__nav-container + .aboutpage__nav-container .aboutpage__nav-item {
+    font-size: 1em;
 }
 
 @supports(display: grid) {
