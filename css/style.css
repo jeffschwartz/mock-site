@@ -10,11 +10,14 @@ body {
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 100%;
+    background-color: #fff;
 }
 
 p {
+    font-family: 'Roboto', sans-serif;
     font-size: 1em;
     line-height: 1.5em;
+    width: 50vw;
 }
 
 /*
@@ -51,6 +54,15 @@ p {
 /* list */
 .list {
     list-style: none;
+    padding-left: 0;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2em;
+    color: #007bff;
+}
+
+.list .list {
+    padding-left: 1em;
 }
 
 /* landing page */
@@ -92,26 +104,43 @@ p {
 
 .aboutpage {
     padding: 10px;
+    font-size: 1em;
+    color: #575A4A;
 }
+
+/* .aboutpage__header {
+} */
 
 .aboutpage__nav-container {
     text-align: center;
+    padding: 10px;
+}
+
+.aboutpage__nav-container--main {
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .aboutpage__nav-item {
-    font-size: 2em;
-    /* padding: 0 .8rem; */
+    font-size: 2rem;
 }
 
-.aboutpage__nav-container + .aboutpage__nav-container {
-    margin-top: 20px;
+.aboutpage__nav-item--active {
+    color: #bbb;
+}
+.aboutpage__nav-item a {
+    color: inherit;
 }
 
 .aboutpage__nav-container + .aboutpage__nav-container .aboutpage__nav-item {
-    font-size: 1em;
+    font-size: 1rem;
 }
 
-@supports(display: grid) {
+.aboutpage__list {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+@supports(display: gridd) {
     /* landingpage */
 
     .landingpage {
@@ -142,8 +171,8 @@ p {
 }
 
 @media(max-width: 480px) {
-    /* .aboutpage__nav-item, .aboutpage__nav-item .fa-2x {
-        font-size: 80%;
-    } */
+    .aboutpage__nav-item {
+        font-size: 1.25em;
+    }
 
 }

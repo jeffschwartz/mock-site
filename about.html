@@ -7,13 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About</title>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="aboutpage">
-        <header>
-            <nav class="aboutpage__nav-container">
+        <header class="aboutpage__header">
+            <nav class="aboutpage__nav-container aboutpage__nav-container--main">
                 <ul class="horizontal-menu">
                     <li class="horizontal-menu__item aboutpage__nav-item">
                         <a class="unadorned-link" href="landingpage.html">Home</a>
@@ -21,8 +22,8 @@
                     <li class="horizontal-menu__item aboutpage__nav-item">
                         <a class="unadorned-link" href="#">Blog</a>
                     </li>
-                    <li class="horizontal-menu__item aboutpage__nav-item">
-                        <a class="unadorned-link" href="about.html">About</a>
+                    <li class="horizontal-menu__item aboutpage__nav-item aboutpage__nav-item--active">
+                       About
                     </li>
                 </ul>
             </nav>
@@ -46,21 +47,22 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        <main class="aboutpage__main-content">
             <h1>About</h1>
-            <p>Avid web developer with great skillset including the following:</p>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <ul>
+            <h2>Have Web - For Hire</h2>
+            <p>Available for remote contracting/temporary assignments. I'm an avid web developer - <em>both front and back-end</em> - with a great skillset including the following:</p>
+            <ul class="list aboutpage__list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <ul class="list">
                     <li>CSS Flexbox</li>
                     <li>CSS Grid</li>
                     <li>Bootstrap</li>
                 </ul>
                 <li>JavaScript/ES6</li>
-                <ul>
+                <ul class="list">
                     <li>Front-end Frameworks/Libraries</li>
-                    <ul>
+                    <ul class="list">
                         <li>Babel</li>
                         <li>React</li>
                         <li>Redux</li>
@@ -69,6 +71,8 @@
                 </ul>
                 <li>Webpack</li>
                 <li>Node</li>
+                <li>MongoDB</li>
+                <li>SQL</li>
             </ul>
         </main>
     </div>
