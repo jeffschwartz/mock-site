@@ -99,7 +99,8 @@ p {
 }
 
 .aboutpage__nav-item {
-    font-size: 80%;
+    font-size: 1.25em;
+    padding: 0 .8rem;
 }
 
 @supports(display: grid) {
