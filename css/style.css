@@ -85,7 +85,7 @@ em {
 .menu__item {
     display: block;
     padding: 5px 10px;
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 .menu__item:first-child {
@@ -218,7 +218,7 @@ em {
 /* about page */
 
 .aboutpage {
-    padding: 10px;
+    padding: 0 10px;
     font-size: 1em;
     color: #575A4A;
 }
@@ -264,7 +264,7 @@ em {
 
 @media (min-width: 400px) {
     .header {
-        padding: 10px 0 11px 0;
+        padding: 6px 0;
         min-height: 1.5em;
         border-bottom: 1px solid #e5e5e5;
     }
@@ -283,7 +283,7 @@ em {
         display: inline-block;
         padding: 0 30px;
         border-right: 1px solid #000;
-        font-size: 1.5rem;
+        font-size: 1.5em;
     }
     .menu__item:first-child {
         border-top: none;
