@@ -25,9 +25,8 @@
         .header {
             width: 100%;
             background-color: #fff;
-            /* position: relative; */
             color: #575A4A;
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid #e5e5e5;
         }
 
         .header__image {
@@ -41,9 +40,6 @@
         }
 
         .header__mobile-icon {
-            /* position: absolute;
-            left: 0;
-            top: 0; */
             font-size: 1.5em;
             margin: 10px
         }
@@ -54,8 +50,6 @@
 
         .header__menu-container {
             width: 100%;
-            /* min-height: 50px; */
-            /* don't remove */
         }
 
         .menu {
@@ -63,7 +57,6 @@
             list-style: none;
             margin: 0;
             padding: 0;
-            /* padding: 50px 0 0 0; */
             background-color: white;
         }
 
@@ -92,7 +85,8 @@
 
         @media (min-width: 400px) {
             .header {
-                padding: 10px 0;
+                padding: 10px 0 11px 0;
+                min-height: 1.5em;
                 border-bottom: 1px solid #e5e5e5;
             }
             .header__mobile-icon {
@@ -110,8 +104,7 @@
                 display: inline-block;
                 padding: 0 30px;
                 border-right: 1px solid #000;
-                font-size: 2rem;
-                line-height: 50px;
+                font-size: 1.5rem;
             }
             .menu__item:first-child {
                 border-top: none;
