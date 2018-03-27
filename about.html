@@ -13,37 +13,21 @@
 
 <body>
     <div class="aboutpage">
-        <header class="aboutpage__header">
-            <nav class="aboutpage__nav-container aboutpage__nav-container--main">
-                <ul class="horizontal-menu">
-                    <li class="horizontal-menu__item aboutpage__nav-item">
-                        <a class="unadorned-link aboutpage__link" href="landingpage.html">Home</a>
+        <header class="header">
+            <!-- <img class="header__image" src="media/2011-07-02-154408.jpg" alt=""> -->
+            <label for="header__mobile-checkbox">
+                <i class="fas fa-bars header__mobile-icon"></i>
+            </label>
+            <nav class="header__menu-container">
+                <input class="header__mobile-checkbox" type="checkbox" id="header__mobile-checkbox">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a class="menu__link" href="landingpage.html">Home</a>
                     </li>
-                    <li class="horizontal-menu__item aboutpage__nav-item">
-                        <a class="unadorned-link aboutpage__link" href="#">Blog</a>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Blog</a>
                     </li>
-                    <li class="horizontal-menu__item aboutpage__nav-item aboutpage__nav-item--active">
-                        About
-                    </li>
-                </ul>
-            </nav>
-            <nav class="aboutpage__nav-container">
-                <ul class="horizontal-menu">
-                    <li class="horizontal-menu__item aboutpage__nav-item aboutpage__nav-item--small">
-                        <a class="unadorned-link aboutpage__link" href="https://twitter.com/jefftschwartz" target="_blank">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="horizontal-menu__item aboutpage__nav-item aboutpage__nav-item--small">
-                        <a class="unadorned-link aboutpage__link" href="https://github.com/jeffschwartz" target="_blank">
-                            <i class="fab fa-github-alt"></i>
-                        </a>
-                    </li>
-                    <li class="horizontal-menu__item aboutpage__nav-item aboutpage__nav-item--small">
-                        <a class="unadorned-link aboutpage__link" href="mailto:havewebforhire@gmail.com" target="_blank">
-                            <i class="far fa-envelope"></i>
-                        </a>
-                    </li>
+                    <li class="menu__item menu__item--active">About</li>
                 </ul>
             </nav>
         </header>
