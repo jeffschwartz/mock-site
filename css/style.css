@@ -7,15 +7,16 @@
 }
 
 body {
-    background-color: #fff;
+    background-color: white;
     margin: 0;
     font: 100%/1.5 Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
-    line-height: 1.5em;
+    line-height: 1.5;
     width: 50vw;
 }
 
@@ -131,7 +132,7 @@ em {
     padding-left: 0;
     font-size: 1em;
     font-family: 'Roboto', sans-serif;
-    line-height: 2em;
+    line-height: 2;
     color: #007bff;
 }
 
@@ -143,17 +144,24 @@ em {
 /* business card */
 
 .business-card {
-    display: inline-block;
-    border: 1px solid #888888;
+    border-left: 1px solid #888888;
+    border-top: 1px solid #888888;
     border-radius: 2px;
     margin-bottom: 2em;
     padding: 1em 2em;
+    background-color: white;
     background-image: url('../media/www.jpg');
     background-size: 150px;
     background-repeat: no-repeat;
-    box-shadow: 12px 12px 10px tomato;
+    box-shadow: 10px 10px 8px gray;
     position: relative;
-    height: 150px;
+    width: 350px;
+    height: 170px;
+    color: #575A4A;
+}
+
+.business-card--centered {
+    margin: 0 auto;
 }
 
 .business-card__title {
@@ -178,6 +186,16 @@ em {
     font-size: inherit;
 }
 
+.business-card__hard-sell {
+    /* display: inline-block;
+    position: relative;
+    top: -15px; */
+    margin: auto;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 300;
+    width: 90%;
+}
 
 /* landing page */
 
@@ -218,9 +236,21 @@ em {
 /* about page */
 
 .aboutpage {
+    height: 100%;
     padding: 0 10px;
-    font-size: 1em;
+    font-size: .8em;
     color: #575A4A;
+    background-color: black;
+    background: linear-gradient(white, black);
+    background-attachment: fixed;
+}
+
+.aboutpage__main-content {
+    text-align: center;
+}
+
+.aboutpage__link {
+    color: inherit;
 }
 
 @supports(display: grid) {
