@@ -100,7 +100,10 @@ body {
 
 .page__copy-container {
     padding: 20px;
+    color: #385f70;
+    font-weight: bold;
 }
+
 .page {
     width: 100vw;
 }
@@ -129,6 +132,7 @@ body {
 .page__footer {
     background-color: var(--primary-300-color);
     width: 100%;
+    min-height: 5rem;
     text-align: center;
     margin-top: 5rem;
 }
