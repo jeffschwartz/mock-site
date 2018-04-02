@@ -1,0 +1,18 @@
+// material design inspired text style color palaiettes
+// for details paste the following link into the browser
+// (clicking here doesn't seem to work:
+// https://material.io/color/#!/?view.left=1&view.right=0&secondary.color=C62828&primary.color=6A1B9A
+
+// white text on dark backgrouns/opacity
+$wtdb-opacity-primary-text: 1;
+$wtdb-opacity-secondary-text: .7;
+$wtdb-opacity-disabled-text: .5;
+$wtdb-opacity-hint-text: .5;
+$wtdb-opacity-divider-text: .12;
+
+// dark text on light backgrouns/opacity
+$dtlb-opacity-primary-text: .87;
+$dtlb-opacity-secondary-text: .54;
+$dtlb-opacity-disabled-text: .38;
+$dtlb-opacity-hint-text: .38;
+$dtlb-opacity-divider-text: .12;
