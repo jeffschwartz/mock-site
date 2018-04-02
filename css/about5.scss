@@ -63,6 +63,11 @@ body {
 
 .promo--over-under {
     flex-direction: column;
+    border-radius: 0;
+}
+
+.promo--over-under .promo__copy-container {
+    border-radius: $standard-border-radius;
 }
 
 .promo--side-by-side,
