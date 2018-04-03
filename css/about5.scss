@@ -16,14 +16,6 @@ $secondary-900-color: #263238;
 $white: #ffffff;
 $black: #000000;
 $standard-border-radius: 3px;
-:root {
-    // --white: white;
-    --page-title-font-family: Georgia, 'Times New Roman', Times, serif;
-    --font-size: 1rem; // --standard-border-radius: 3px;
-    --red-text-color: red;
-    --blue-text-color: blue;
-}
-
 * {
     box-sizing: border-box;
 }
@@ -48,7 +40,6 @@ body {
 .row:nth-last-child(2) {
     padding-bottom: 3em;
 }
-
 
 .row--bg-color {
     background-color: $primary-300-color;
@@ -173,9 +164,9 @@ body {
         width: 60%;
         font-size: 1.3rem;
     }
-    // .promo--side-by-side .promo__image-container,
-    // .promo--side-by-side-reverse .promo__media-container {
-    .promo--side-by-side .promo__image-container {
+    .promo--side-by-side .promo__image-container,
+    .promo--side-by-side-reverse .promo__media-container {
+        // .promo--side-by-side .promo__image-container {
         width: 40%;
     }
     .promo__media-container {
