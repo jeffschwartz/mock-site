@@ -72,13 +72,12 @@ body {
 }
 
 .promo__image,
-.promo__media {
+.promo__emoji {
     display: block;
     width: 100%;
 }
 
-.promo__media {
-    width: 100%;
+.promo__emoji {
     margin: auto;
     font-size: 10rem;
     color: rgba(green, $dtlb-opacity-primary-text);
@@ -165,11 +164,10 @@ body {
         font-size: 1.3rem;
     }
     .promo--side-by-side .promo__image-container,
-    .promo--side-by-side-reverse .promo__media-container {
-        // .promo--side-by-side .promo__image-container {
+    .promo__emoji-container {
         width: 40%;
     }
-    .promo__media-container {
+    .promo__emoji-container {
         align-self: center;
     }
 }
