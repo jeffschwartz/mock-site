@@ -1,4 +1,6 @@
+@import "resets";
 @import "text";
+
 /* toolbars, status box, etc. */
 
 // --primary-700-color: #0288d1;
@@ -102,10 +104,22 @@ body {
 }
 
 .promo__copy--standout-text {
-    font-weight: 900;
+    // font-weight: 900;
     font-size: 1.7rem;
     font-style: italic;
-    color: rgba($primary-700-color, $wtdb-opacity-primary-text);
+    color: rgba($primary-700-color, $dtlb-opacity-primary-text);
+}
+
+.promo__copy--list {
+    list-style: none;
+    margin-top: 2rem;
+    padding: 0;
+}
+
+.promo__copy--list-item {
+    display: block;
+    font-size: 1.5rem;
+    color: rgba(green, $dtlb-opacity-primary-text);
 }
 
 .page {
