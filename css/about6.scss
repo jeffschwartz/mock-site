@@ -3,24 +3,18 @@
 
 /* toolbars, status box, etc. */
 
-// --primary-700-color: #0288d1;
 $primary-700-color: #0288d1;
 /* dominant theme  */
 
-// --primary-500-color: #03a9f4;
 $primary-500-color: #03a9f4;
-// --primary-300-color: #4fc3f7;
 $primary-300-color: #4fc3f7;
-/* --accent-color: brighter and more saturated */
+/* accent-color: brighter and more saturated */
 
 // --secondary-900-color: #263238;
 $secondary-900-color: #263238;
 $white: #ffffff;
 $black: #000000;
 $standard-border-radius: 3px;
-* {
-    box-sizing: border-box;
-}
 
 body {
     margin: 0;
@@ -28,20 +22,16 @@ body {
     line-height: 1.5;
     font-family: "Roboto", sans-serif;
     height: 100vh;
-    // background-color: $white;
-    background-color: $primary-300-color;
+    background-color: $primary-500-color;
 }
 
 .row {
     display: block;
     width: 100%;
-    padding: 3em 3em 0 3em;
+    padding: 0;
     margin: 0 auto;
     overflow: hidden;
-}
-
-.row:nth-last-child(2) {
-    padding-bottom: 3em;
+    background-color: transparent;
 }
 
 .row--bg-color {
@@ -51,17 +41,17 @@ body {
 .promo {
     display: flex;
     background-color: white;
+    border-bottom: 1px solid $primary-300-color;
     border-radius: $standard-border-radius;
     overflow: hidden;
 }
 
-.promo--over-under {
-    flex-direction: column;
-    border-radius: 0;
+.row:last-child .promo {
+    border-bottom: none;
 }
 
-.promo--over-under .promo__copy-container {
-    border-radius: $standard-border-radius;
+.promo--over-under {
+    flex-direction: column;
 }
 
 .promo--side-by-side,
@@ -92,7 +82,6 @@ body {
     padding: 3rem;
     text-align: center;
     font-size: 1rem;
-    background-color: #fff;
 }
 
 .promo--over-under .promo__copy-container {
@@ -105,7 +94,6 @@ body {
 }
 
 .promo__copy--standout-text {
-    // font-weight: 900;
     font-size: 1.7rem;
     font-style: italic;
     color: rgba($primary-700-color, $dtlb-opacity-primary-text);
@@ -150,6 +138,7 @@ body {
     font-size: 3rem;
     font-weight: 900;
     text-align: center;
+    margin-bottom: 1rem;
     color: rgba($black, $dtlb-opacity-primary-text);
 }
 
@@ -164,6 +153,9 @@ body {
 }
 
 @media(min-width: 767px) {
+    .row {
+        padding: 0 3em;
+    }
     .promo--side-by-side {
         flex-direction: row;
     }
