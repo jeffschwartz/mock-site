@@ -109,7 +109,10 @@ body {
 
 .social-icon {
     font-size: 1.7rem;
-    color: rgba(28, 0, 128, .87);
+    // color: rgba(28, 0, 128, .87);
+    color: #484848;
+
+
 }
 
 .page-title {
@@ -173,8 +176,11 @@ body {
     .navigation:last-child {
         margin-left: auto;
     }
+    .plug {
+        font-size: 1.3rem;
+    }
     .page-title {
-        font-size: 5.2rem;
+        font-size: 5rem;
         padding-right: 9.3rem;
     }
     .story__content {
