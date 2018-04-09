@@ -99,8 +99,9 @@ body {
 
 .about-banner {
     @include banner("../media/cyclone-roller-coaster-coney-island.jpg", #147ac2);
+    filter: grayscale(90%);
 }
 
 .about-banner__mojo {
-    @include banner__mojo(transparent, red);
+    @include banner__mojo(transparent, white);
 }
