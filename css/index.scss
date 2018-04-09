@@ -1,7 +1,7 @@
 @import "mixins";
 @import "resets";
-
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -24,7 +24,7 @@ body {
     height: 100%;
 }
 
-.mojo {
+.banner__mojo {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: transparent;
     color: white;
@@ -35,17 +35,77 @@ body {
     text-transform: uppercase;
 }
 
-.bio {
-    display: flex;
-    flex-direction: column;
+.page {
     padding: 5rem 2rem;
 }
 
+.bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .bio__content {
-    width: 55%;
-    margin: 1rem auto;
+    // width: 85%;
+    margin: 1rem 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem; // color: rgba(0, 0, 0, .90);
+    color: rgba(#000, .9);
+    letter-spacing: 1px;
+}
+
+.navigation-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.navigation__item {
+    // padding: .7rem 0;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    border: 2px solid #000;
+    text-align: center;
+    font-weight: 700;
+    display: block;
+}
+
+.navigation__link {
+    display: block;
+    text-decoration: none; // height: 100%;
+    padding: .7rem 0;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navigation__link:hover {
+    background-color: black;
+    color: white;
+    transition: all .7s ease-in;
+}
+
+.footer {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #495f3d;
+    text-align: center;
+    padding: 2rem 1rem;
     font-size: 1.2rem;
-    // color: rgba(0, 0, 0, .90);
-    color: #000;
+    color: rgba(#fff, .76);
+}
+
+@media(min-width: 640px) {
+    .bio__content {
+        width: 54%;
+    }
+
+    .navigation-container {
+        width: 40%;
+    }
 }
