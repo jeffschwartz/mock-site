@@ -1,5 +1,5 @@
 // mixins
-@mixin banner($image-url, $bgcolor) {
+@mixin banner($image-url, $bgcolor: transparent) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,7 +12,7 @@
     height: 100%;
 }
 
-@mixin banner__mojo($bgcolor, $color) {
+@mixin banner__mojo($color, $bgcolor: transparent) {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: $bgcolor;
     color: $color;
