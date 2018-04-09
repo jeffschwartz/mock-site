@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-sass": "node-sass css/ -o css/",
     "watch-sass": "node-sass -w css/ -o css/",
-    "watch-index": "node-sass -w css/index.scss -o css/"
+    "build-index": "node-sass designs/seriously/css/ -o designs/seriously/css/",
+    "watch-index": "node-sass -w designs/seriously/css/ -o designs/seriously/css/"
   },
   "repository": {
     "type": "git",

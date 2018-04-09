@@ -11,39 +11,27 @@ body {
     margin: 0;
 }
 
-.banner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(54, 105, 54);
-    background-image: url("../media/black-and-white-close-up-cobweb.jpg");
-    background-origin: border-box;
-    background-size: cover;
-    background-position: 0 0;
-    height: 100%;
+/*
+    Home page
+*/
+
+.home-banner {
+    @include banner("../media/black-and-white-close-up-cobweb.jpg", rgb(54, 105, 54));
 }
 
-.banner__mojo {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: transparent;
-    color: white;
-    font-size: 5rem;
-    font-weight: 900;
-    padding: 1rem;
-    letter-spacing: .5rem;
-    text-transform: uppercase;
+.home-banner__mojo {
+    @include banner__mojo(transparent, white);
 }
 
-.page {
+.home-page {
     padding: 5rem 2rem;
 }
 
-.bio {
+.home-bio {
     width: 100%;
 }
 
-.bio__content {
+.home-bio__content {
     margin: 1rem 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.2rem; // color: rgba(0, 0, 0, .90);
@@ -102,8 +90,17 @@ body {
     .bio__content {
         width: 54%;
     }
-
     .navigation-container {
         width: 40%;
     }
+}
+
+/* About page */
+
+.about-banner {
+    @include banner("../media/cyclone-roller-coaster-coney-island.jpg", #147ac2);
+}
+
+.about-banner__mojo {
+    @include banner__mojo(transparent, red);
 }
