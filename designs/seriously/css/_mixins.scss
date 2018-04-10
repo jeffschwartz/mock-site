@@ -8,15 +8,16 @@
     background-image: url($image-url);
     background-origin: border-box;
     background-size: cover;
-    background-position: 0 0;
+    background-position: center center;
+    background-clip: border-box;
     height: 100%;
 }
 
-@mixin banner__mojo($color, $bgcolor: transparent) {
+@mixin banner__mojo($fontsize, $color, $bgcolor: transparent) {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: $bgcolor;
     color: $color;
-    font-size: 5rem;
+    font-size: $fontsize;
     font-weight: 900;
     padding: 1rem;
     letter-spacing: .5rem;

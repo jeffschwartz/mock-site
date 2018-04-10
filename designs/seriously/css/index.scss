@@ -20,7 +20,7 @@ body {
 }
 
 .home-banner__mojo {
-    @include banner__mojo(white);
+    @include banner__mojo(3.5rem, white);
 }
 
 .home-page, .about-page, .contact-page, .blog-page {
@@ -86,13 +86,9 @@ body {
     color: rgba(#fff, .76);
 }
 
-@media(min-width: 640px) {
-    .home-bio__content, .about-bio__content, .blog-bio__content, .contact-bio__content {
-        width: 54%;
-    }
-    .navigation-container {
-        width: 40%;
-    }
+.footer__link {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* About page */
@@ -103,7 +99,7 @@ body {
 }
 
 .about-banner__mojo {
-    @include banner__mojo(white);
+    @include banner__mojo(3.5rem, white);
 }
 
 /* About page */
@@ -114,7 +110,7 @@ body {
 }
 
 .blog-banner__mojo {
-    @include banner__mojo(white);
+    @include banner__mojo(3.5rem, white);
 }
 
 /* Contact page */
@@ -125,5 +121,17 @@ body {
 }
 
 .contact-banner__mojo {
-    @include banner__mojo(white);
+    @include banner__mojo(3.5rem, white);
+}
+
+@media(min-width: 640px) {
+    .home-banner__mojo, .about-banner__mojo, .blog-banner__mojo, .contact-banner__mojo {
+        font-size: 5rem;
+    }
+    .home-bio__content, .about-bio__content, .blog-bio__content, .contact-bio__content {
+        width: 54%;
+    }
+    .navigation-container {
+        width: 40%;
+    }
 }
